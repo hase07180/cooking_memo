@@ -5,22 +5,25 @@
 
 <div class="container menuForm">
   <h1 class="menuDays">2020年2月21日（日）の献立</h1>
-  <div class="menuInfo">
-    <div class="menuName">
-      <h2>料理名</h2>
-      <input class="input" type="text">
+  <form method="POST" action="{{ route('menu.store') }}">
+    @csrf
+    <div class="menuInfo">
+      <div class="menuName">
+        <h2>料理名</h2>
+        <input class="input" type="text" name="cooking_name">
+      </div>
+      <div class="menuImage">
+        <h2>料理名の画像</h2>
+        <input class="input" type="file" name="cooking_image">
+      </div>
     </div>
-    <div class="menuImage">
-      <h2>料理名の画像</h2>
-      <input class="input" type="file">
+    <div class="icon">
+      <a href="">料理を追加<i class="fas fa-plus-square"></i></a>
     </div>
-  </div>
-  <div class="icon">
-    <a href="">料理を追加<i class="fas fa-plus-square"></i></a>
-  </div>
-  <div class="cofirm_btn">
-    <input class="btn btn-secondary" type="submit" value="確認">
-  </div>
+    <div class="cofirm_btn">
+      <input class="btn btn-secondary" type="submit" value="確認">
+    </div>
+  </form>
 </div>
 
 @endsection

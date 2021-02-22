@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Menu;
+
 class MenuController extends Controller
 {
     /**
@@ -14,6 +16,7 @@ class MenuController extends Controller
     public function index()
     {
         //
+        return view('menu.index');
     }
 
     /**
@@ -36,6 +39,16 @@ class MenuController extends Controller
     public function store(Request $request)
     {
         //
+        $menu = new Menu;
+
+        $menu->cooking_name = $request->input('cooking_name');
+        $menu->cooking_image = $request->input('cooking_image');
+
+        $menu->save();
+
+        return redirect('menu/');
+        // dd($cooking_name, $cooking_image);
+
     }
 
     /**
