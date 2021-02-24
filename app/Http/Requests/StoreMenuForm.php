@@ -25,6 +25,7 @@ class StoreMenuForm extends FormRequest
     {
         return [
             //
+            'cooking_name' => 'required|string|max:50',
         ];
     }
 }

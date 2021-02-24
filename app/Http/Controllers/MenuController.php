@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Menu;
+use App\Http\Requests\StoreMenuForm;
 
 class MenuController extends Controller
 {
@@ -36,7 +37,7 @@ class MenuController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreMenuForm $request)
     {
         //
         $menu = new Menu;
