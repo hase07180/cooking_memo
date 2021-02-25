@@ -42,8 +42,12 @@ class MenuController extends Controller
         //
         $menu = new Menu;
 
+       //画像ファイルのパス
+        $img_url = $request->cooking_image->store('public/upload');
+
         $menu->cooking_name = $request->input('cooking_name');
-        $menu->cooking_image = $request->input('cooking_image');
+        $menu->cooking_image = str_replace('public/', 'storage/', $img_url);
+        // $menu->cooking_image = $request->input('cooking_image');
 
         $menu->save();
 

@@ -15,7 +15,7 @@
 
 <div class="container menuForm">
   <h1 class="menuDays">2020年2月21日（日）の献立</h1>
-  <form method="POST" action="{{ route('menu.store') }}">
+  <form method="POST" action="{{ route('menu.store') }}" enctype="multipart/form-data">
     @csrf
     <div class="menuInfo">
       <div class="menuName">

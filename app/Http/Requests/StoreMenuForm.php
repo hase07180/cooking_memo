@@ -26,6 +26,7 @@ class StoreMenuForm extends FormRequest
         return [
             //
             'cooking_name' => 'required|string|max:50',
+            'cooking_image' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
         ];
     }
 }
