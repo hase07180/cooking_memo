@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Menu;
 use App\Http\Requests\StoreMenuForm;
+use Illuminate\Support\Facades\DB;
 
 class MenuController extends Controller
 {
@@ -17,7 +18,12 @@ class MenuController extends Controller
     public function index()
     {
         //
-        return view('menu.index');
+        // $menu = Menu::all();
+        $menus = DB::table('menus')
+        ->select('cooking_name', 'cooking_image')
+        ->get();
+        // dd($menus);
+        return view('menu.index', compact('menus'));
     }
 
     /**
