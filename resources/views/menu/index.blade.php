@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('/css/index.css') }}">
 
 <div class="container menu-page">
-  <h1>{{ \Carbon\Carbon::now()->format("Y/m/d") }}の献立</h1>
+  <h1 class="menu-day">{{ \Carbon\Carbon::now()->format("Y/m/d") }}の献立</h1>
   {{-- <h1>{{ $today }}</h1> --}}
   <br>
   <div class="menu-lists row">
