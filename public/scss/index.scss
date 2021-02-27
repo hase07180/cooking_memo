@@ -1,11 +1,12 @@
 .menu-page {
-    background-color: bisque;
+    background-image: url("/images/garlic-2556022_1280.jpg");
 }
 
 .menu-lists {
     display: flex;
     justify-content: center;
     .menu-card {
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
         margin: 0 30px;
         margin-top: 20px;
     }
