@@ -7,7 +7,7 @@
   <h1>{{ \Carbon\Carbon::now()->format("Y/m/d") }}の献立</h1>
   {{-- <h1>{{ $today }}</h1> --}}
   <br>
-  <div class="menu-lists">
+  <div class="menu-lists row">
     @foreach ($menus as $menu)
     <div class="card menu-card" style="width: 18rem;">
       <a href="hase">
