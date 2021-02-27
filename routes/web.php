@@ -1,5 +1,6 @@
 <?php
 
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('menu', 'MenuController');
+Route::group(['prefix' => 'menu', 'middleware' => 'auth'], function(){
+    Route::get('/', 'MenuController@index')->name('menu.index');
+    Route::get('create', 'MenuController@create')->name('menu.create');
+    Route::post('store', 'MenuController@store')->name('menu.store');
+});
