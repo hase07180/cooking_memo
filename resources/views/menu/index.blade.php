@@ -9,14 +9,26 @@
   <br>
   <div class="menu-lists">
     @foreach ($menus as $menu)
-    <div class="menu-card">
+    <div class="card menu-card" style="width: 18rem;">
+      <a href="hase">
+        <div class="menu">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em"><img class="menu-image" src="{{ $menu->cooking_image }}" alt="{{ $menu->cooking_name }}"></text></svg>
+          <div class="card-body">
+            <p class="card-text">{{ $menu->cooking_name }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    {{-- <div class="menu-card">
       <a href="#">
         <div class="menu">
           <h2 class="menu-name">料理名：{{ $menu->cooking_name }}</h2>
           <img class="menu-image" src="{{ $menu->cooking_image }}" alt="{{ $menu->cooking_name }}">
         </div>
       </a>
-    </div>
+    </div> --}}
     @endforeach
   </div>
   <div class="shopping-lists">
