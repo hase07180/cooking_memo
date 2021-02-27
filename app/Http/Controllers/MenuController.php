@@ -22,6 +22,7 @@ class MenuController extends Controller
         $menus = DB::table('menus')
         ->select('cooking_name', 'cooking_image')
         ->get();
+        $today = date("Y-m-d H:i:s");
         // dd($menus);
         return view('menu.index', compact('menus'));
     }

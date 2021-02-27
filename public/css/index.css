@@ -1,0 +1,23 @@
+.menu-page {
+  background-color: bisque;
+}
+.menu-lists {
+  display: flex;
+  justify-content: center;
+}
+.menu-lists .menu-card {
+  margin: 0 30px;
+}
+.menu-lists a {
+  cursor: pointer;
+}
+.menu-lists .menu {
+  margin: 0 20px 20px 0;
+  width: 100%;
+  background-color: aqua;
+  text-align: center;
+}
+.menu-lists .menu .menu-image {
+  width: 300px;
+  height: 300px;
+}

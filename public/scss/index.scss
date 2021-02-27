@@ -1,0 +1,25 @@
+.menu-page {
+    background-color: bisque;
+}
+
+.menu-lists {
+    display: flex;
+    justify-content: center;
+    .menu-card {
+        margin: 0 30px;
+        // background-color: aqua;
+    }
+    a {
+        cursor: pointer;
+    }
+    .menu {
+        margin: 0 20px 20px 0;
+        width: 100%;
+        background-color: aqua;
+        text-align: center;
+        .menu-image {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
