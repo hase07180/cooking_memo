@@ -20,7 +20,7 @@ class MenuController extends Controller
         //
         // $menu = Menu::all();
         $menus = DB::table('menus')
-        ->select('cooking_name', 'cooking_image')
+        ->select('cooking_name', 'cooking_image', 'id')
         ->get();
         $today = date("Y-m-d H:i:s");
         // dd($menus);
