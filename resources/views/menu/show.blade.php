@@ -4,7 +4,6 @@
 {{-- <form method="GET" action=""> --}}
   {{-- @csrf --}}
   <h1>{{ $menu->cooking_name }}</h1>
-  <img src="{{ $menu->cooking_image }}" alt="">
   <img class="menu-image" src="{{ $menu->cooking_image }}" alt="{{ $menu->cooking_name }}">
 {{-- </form> --}}
 @endsection
