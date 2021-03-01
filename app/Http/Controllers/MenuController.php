@@ -23,7 +23,6 @@ class MenuController extends Controller
         ->select('cooking_name', 'cooking_image', 'id')
         ->get();
         $today = date("Y-m-d H:i:s");
-        // dd($menus);
         return view('menu.index', compact('menus'));
     }
 
@@ -54,12 +53,10 @@ class MenuController extends Controller
 
         $menu->cooking_name = $request->input('cooking_name');
         $menu->cooking_image = str_replace('public/', 'storage/', $img_url);
-        // $menu->cooking_image = $request->input('cooking_image');
 
         $menu->save();
 
         return redirect('menu/');
-        // dd($cooking_name, $cooking_image);
 
     }
 
