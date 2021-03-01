@@ -19,16 +19,6 @@
         </div>
       </a>
     </div>
-
-
-    {{-- <div class="menu-card">
-      <a href="#">
-        <div class="menu">
-          <h2 class="menu-name">料理名：{{ $menu->cooking_name }}</h2>
-          <img class="menu-image" src="{{ $menu->cooking_image }}" alt="{{ $menu->cooking_name }}">
-        </div>
-      </a>
-    </div> --}}
     @endforeach
   </div>
   <div class="shopping-lists">
