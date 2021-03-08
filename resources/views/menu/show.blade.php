@@ -2,7 +2,7 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('/css/show.css') }}">
-  <div class="container">
+  <div class="container details-page">
     <h1 class="menu-name" >料理名：{{ $menu->cooking_name }}</h1>
 
     <div class="material-lists">
@@ -10,6 +10,14 @@
         <img class="menu-image" src="{{'/' . $menu->cooking_image }}" alt="{{ $menu->cooking_name }}">
       </div>
       <div class="ingredients">
+        <h3>材料</h3>
+        <ul>
+          <li>〇〇</li>
+          <li>〇〇</li>
+          <li>〇〇</li>
+          <li>〇〇</li>
+          <li>〇〇</li>
+        </ul>
       </div>
     </div>
 

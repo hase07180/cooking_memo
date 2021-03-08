@@ -1,4 +1,31 @@
-.menu-image {
+.details-page .menu-name {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.details-page .material-lists {
+  display: flex;
+  justify-content: space-between;
+}
+.details-page .material-lists .picture {
+  width: 47%;
+}
+.details-page .material-lists .picture .menu-image {
   width: 100%;
-  height: 200px;
+  height: 300px;
+}
+.details-page .material-lists .ingredients {
+  background-color: aqua;
+  width: 47%;
+}
+.details-page .material-lists .ingredients h3 {
+  text-align: center;
+  font-size: 35px;
+}
+.details-page .material-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.details-page .material-btn .btn {
+  width: 200px;
+  height: 60px;
 }
