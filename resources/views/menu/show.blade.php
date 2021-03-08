@@ -3,7 +3,7 @@
 @section('content')
 <link rel="stylesheet" href="{{ asset('/css/show.css') }}">
   <div class="container">
-    <h1 class="menu-name" >{{ $menu->cooking_name }}</h1>
+    <h1 class="menu-name" >料理名：{{ $menu->cooking_name }}</h1>
 
     <div class="material-lists">
       <div class="picture">
