@@ -27,4 +27,5 @@ Route::group(['prefix' => 'menu', 'middleware' => 'auth'], function(){
     Route::get('/', 'MenuController@index')->name('menu.index');
     Route::get('create', 'MenuController@create')->name('menu.create');
     Route::post('store', 'MenuController@store')->name('menu.store');
+    Route::get('show/{id}', 'MenuController@show')->name('menu.show');
 });

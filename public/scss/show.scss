@@ -1,0 +1,33 @@
+.details-page {
+    .menu-name {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .material-lists {
+        display: flex;
+        justify-content: space-between;
+        .picture {
+            width: 47%;
+            .menu-image {
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .ingredients {
+            background-color: aqua;
+            width: 47%;
+            h3 {
+                text-align: center;
+                font-size: 35px;
+            }
+        }
+    }
+    .material-btn {
+        text-align: center;
+        margin-top: 50px;
+        .btn {
+            width: 200px;
+            height: 60px;
+        }
+    }
+}
