@@ -5,11 +5,11 @@
   <div class="container details-page">
     <h1 class="menu-name" >料理名：{{ $menu->cooking_name }}</h1>
 
-    <div class="material-lists">
-      <div class="picture">
+    <div class="material-lists row">
+      <div class="picture col-lg-6  col-12 my-3">
         <img class="menu-image" src="{{'/' . $menu->cooking_image }}" alt="{{ $menu->cooking_name }}">
       </div>
-      <div class="ingredients">
+      <div class="ingredients col-lg-6  col-12 my-3">
         <h3>材料</h3>
         <ul>
           <li>〇〇</li>
