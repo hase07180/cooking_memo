@@ -29,3 +29,7 @@ Route::group(['prefix' => 'menu', 'middleware' => 'auth'], function(){
     Route::post('store', 'MenuController@store')->name('menu.store');
     Route::get('show/{id}', 'MenuController@show')->name('menu.show');
 });
+
+Route::resource('food', 'FoodController')->only([
+    'store', 'create'
+]);

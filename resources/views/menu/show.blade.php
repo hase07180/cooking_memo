@@ -22,7 +22,7 @@
     </div>
 
     <div class="material-btn">
-      <input class="btn btn-secondary" type="submit" value="材料を追加する">
+      <a href="{{ route('food.create') }}"><input class="btn btn-secondary" type="submit" value="材料を追加する"></a>
     </div>
 
   </div>
